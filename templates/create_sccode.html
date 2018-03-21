@@ -1,0 +1,36 @@
+
+<section id="content">
+	<section class="head">
+		<h2>{{title}}</h2>
+	</section>
+	<section class="innerBox">
+		<form action="{% url 'sccode:create_sccode' %}" class="ajax" method="post">
+			{% csrf_token %}
+			<section class="widget one_by_two left">
+				<div class="head">
+					<h4>
+						<span><small class="icon-plus icon"></small></span>
+						<b>Basic Details</b>
+					</h4>							
+				</div>
+				<div class="content formElements">
+					
+				</div>
+				<br>
+				<section class="submit_container">
+				<input type="submit" class="submit button" value="Okay, Let's Go" />
+			</section>
+			</section>
+		</form>
+	</section><!--(.innerBox)-->				
+</section>
+{% endblock %}
+
+{% block static %}
+	{% load static %}
+{% endblock %}
+
+
+
+
+
